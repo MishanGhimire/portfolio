@@ -1,0 +1,170 @@
+/* =========================================
+   Google Fonts
+========================================= */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* =========================================
+   CSS Variables
+========================================= */
+:root {
+  /* ========== Main colors (HSL - hue, saturation, and lightness) ========== */
+
+  /* Blue - hsl(217, 85%, 74%); */
+  /* Purple - hsl(245, 54%, 74%); */
+  /* Teal - hsl(181, 47%, 49%); */
+  /* Yellow - hsl(65, 60%, 70%); */
+  /* Green - hsl(162, 60%, 65%); */
+  /* Red - hsl(356, 67%, 70%); */
+  /* Pink - hsl(330, 73%, 72%); */
+
+  --hue: 217;
+  --sat: 85%;
+  --light: 74%;
+
+  --primary-color: hsl(var(--hue) var(--sat) var(--light)); /* primary */
+  --white-color: hsl(var(--hue) 45% 98%); /* white */
+  --dark-color: hsl(var(--hue) 26% 12%); /* dark */
+
+  /* ======= Changeable colors for dark/light themes ======= */
+  --color-01: hsl(var(--hue) var(--sat) var(--light)); /* primary to dark */
+  --color-02: --white-color: hsl(var(--hue) 45% 98%); /* white to dark */
+  --color-03: hsl(var(--hue) 26% 12%); /* dark to white */
+  --color-04: hsl(var(--hue) 0% 62%); /* light-graygray to dark-gray */
+  --color-05: hsl(var(--hue) 26% 12%); /* dark to primary */
+
+  --body-color: hsl(250 26% 12%); /* dark to white */
+  --hover-color: hsl(var(--hue) var(--sat) calc(var(--light) -7 );
+
+  /* ======= Background colors ======= */
+  --bottom-nav-bg: ;
+  --card-bg: ;
+  --modal-backdrop-bg: ;
+  --footer-bg: ;
+
+  --scrollbar-color: ;
+  --scrollbar-thumb: ;
+  --scrollbar-thumb-hover: ;
+
+  /* ======= Font and typography ======= */
+  --body-font-family: ;
+
+  /* ======= Font sizes ======= */
+  --h1-font-size: ;
+  --h2-font-size: ;
+  --h3-font-size: ;
+  --h4-font-size: ;
+  --h5-font-size: ;
+
+  --xlarge-font-size: ;
+  --large-font-size: ;
+  --medium-font-size: ;
+  --base-font-size: ;
+  --small-font-size: ;
+  --tiny-font-size: ;
+
+  /* ======= Font weights ======= */
+  --font-light: ;
+  --font-regular: ;
+  --font-medium: ;
+  --font-semi-bold: ;
+  --font-bold: ;
+
+  /* ======= Layering order(z-index) ======= */
+  --z-minus: ;
+  --z-base: ;
+  --z-low: ;
+  --z-high: ;
+  --z-content: ;
+  --z-tooltip: ;
+  --z-fixed: ;
+  --z-overlay: ;
+  --z-modal: ;
+  --z-max: ;
+}
+
+/* ======= Light theme ======= */
+
+/* =========================================
+   Reset / Normalize
+========================================= */
+
+/* =========================================
+   Base Styles
+========================================= */
+
+/* =========================================
+   Reusable Styles
+========================================= */
+
+/* =========================================
+   Components
+========================================= */
+
+/* ========== Page scroll bar ========== */
+
+/* ========== Customized cursor ========== */
+
+/* ========== To top button with scroll indicator bar ========== */
+
+/* ========== Buttons ========== */
+
+/* =========================================
+   Header
+========================================= */
+
+/* ========== Dark/Light theme buttons ========== */
+
+/* =========================================
+   Bottom navigation menu
+========================================= */
+
+/* =========================================
+   Home
+========================================= */
+
+/* =========================================
+   About Me
+========================================= */
+
+/* =========================================
+   My Resume
+========================================= */
+
+/* =========================================
+   Services
+========================================= */
+
+/* =========================================
+   Portfolio
+========================================= */
+
+/* =========================================
+   Testimonials
+========================================= */
+
+/* =========================================
+   Contact Me
+========================================= */
+
+/* =========================================
+   Footer
+========================================= */
+
+/* =========================================
+   Media Queries (max-width: 1600px)
+========================================= */
+
+/* =========================================
+   Media Queries (max-width: 1200px)
+========================================= */
+
+/* =========================================
+   Media Queries (max-width: 992px)
+========================================= */
+
+/* =========================================
+   Media Queries (max-width: 768px)
+========================================= */
+
+/* =========================================
+   Media Queries (max-width: 480px)
+========================================= */
