@@ -67,7 +67,7 @@
   --medium-font-size: 1.18rem;
   --base-font-size: 1.1rem;
   --small-font-size: 1.07rem;
-  --tiny-font-size: 0.98;
+  --tiny-font-size: 0.98rem;
 
   /* ======= Font weights ======= */
   --font-light: 300;
@@ -152,6 +152,18 @@ body{
    transition: .3s;
 }
 
+.mishan-main-btn:hover{
+   color: var(--white-color);
+   background: var(--hover-color);
+   border: 2px solid var(--hover-color);
+}
+
+.mishan-main-btn a{
+   color: var(--color-01);
+   font-size: var(--small-font-size);
+   font-weight: 500;
+   transition: .3s;
+}
 /* =========================================
    Header
 ========================================= */
