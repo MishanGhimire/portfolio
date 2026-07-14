@@ -26,59 +26,67 @@
 
   /* ======= Changeable colors for dark/light themes ======= */
   --color-01: hsl(var(--hue) var(--sat) var(--light)); /* primary to dark */
-  --color-02: --white-color: hsl(var(--hue) 45% 98%); /* white to dark */
+  --color-02: hsl(var(--hue) 45% 98%); /* white to dark */
   --color-03: hsl(var(--hue) 26% 12%); /* dark to white */
   --color-04: hsl(var(--hue) 0% 62%); /* light-graygray to dark-gray */
   --color-05: hsl(var(--hue) 26% 12%); /* dark to primary */
 
   --body-color: hsl(250 26% 12%); /* dark to white */
-  --hover-color: hsl(var(--hue) var(--sat) calc(var(--light) -7 );
+  --hover-color: hsl(var(--hue) var(--sat) calc(var(--light) -7%));
 
   /* ======= Background colors ======= */
-  --bottom-nav-bg: ;
-  --card-bg: ;
-  --modal-backdrop-bg: ;
-  --footer-bg: ;
+  --bottom-nav-bg: hsl(var(--hue) 32% 25% / 0.65);
+  --card-bg: linear-gradient(
+    120deg,
+    hsl(var(--hue) 54% 74% / 0.15),
+    hsl(var(--hue) 54% 74% / 0.05)
+  );
+  --modal-backdrop-bg: hsl(var(--hue) 54% 74% / 0.1);
+  --footer-bg: linear-gradient(
+    360deg,
+    hsl(var(--hue) 54% 74% / 0.15),
+    hsl(var(--hue) 54% 74% / 0.1)
+  );
 
-  --scrollbar-color: ;
-  --scrollbar-thumb: ;
-  --scrollbar-thumb-hover: ;
+  --scrollbar-color: hsl(var(--hue) 25% 20%);
+  --scrollbar-thumb: hsl(var(--hue) var(--sat) var(--light));
+  --scrollbar-thumb-hover: hsl(var(--hue) var(--sat) calc(var(--light) -7%));
 
   /* ======= Font and typography ======= */
-  --body-font-family: ;
+  --body-font-family: "Poppins", sans-serif;
 
   /* ======= Font sizes ======= */
-  --h1-font-size: ;
-  --h2-font-size: ;
-  --h3-font-size: ;
-  --h4-font-size: ;
-  --h5-font-size: ;
+  --h1-font-size: 2.85rem;
+  --h2-font-size: 2.25rem;
+  --h3-font-size: 1.97rem;
+  --h4-font-size: 1.43rem;
+  --h5-font-size: 1.13rem;
 
-  --xlarge-font-size: ;
-  --large-font-size: ;
-  --medium-font-size: ;
-  --base-font-size: ;
-  --small-font-size: ;
-  --tiny-font-size: ;
+  --xlarge-font-size: 1.48rem;
+  --large-font-size: 1.23rem;
+  --medium-font-size: 1.18rem;
+  --base-font-size: 1.1rem;
+  --small-font-size: 1.07rem;
+  --tiny-font-size: 0.98;
 
   /* ======= Font weights ======= */
-  --font-light: ;
-  --font-regular: ;
-  --font-medium: ;
-  --font-semi-bold: ;
-  --font-bold: ;
+  --font-light: 300;
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
 
   /* ======= Layering order(z-index) ======= */
-  --z-minus: ;
-  --z-base: ;
-  --z-low: ;
-  --z-high: ;
-  --z-content: ;
-  --z-tooltip: ;
-  --z-fixed: ;
-  --z-overlay: ;
-  --z-modal: ;
-  --z-max: ;
+  --z-minus: -1;
+  --z-base: 0;
+  --z-low: 1;
+  --z-high: 10;
+  --z-content: 100;
+  --z-tooltip: 1000;
+  --z-fixed: 1100;
+  --z-overlay: 1100;
+  --z-modal: 1990;
+  --z-max: 9999;
 }
 
 /* ======= Light theme ======= */
@@ -86,14 +94,44 @@
 /* =========================================
    Reset / Normalize
 ========================================= */
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: var(--body-font-family);
+}
+
+ul,li {
+   list-style: none;
+}
+
+a{
+   color: var(--color-04);
+   text-decoration: none;
+   cursor: pointer;
+}
 
 /* =========================================
    Base Styles
 ========================================= */
+html {
+   scroll-behavior: smooth;
+}
+
+body{
+   color: var(--color-04);
+   background: var(--body-color);
+   transition: .3s;
+}
 
 /* =========================================
    Reusable Styles
 ========================================= */
+.mishan-container{
+   max-width: 1170px;
+   margin-left: auto;
+   margin-right: auto;
+}
 
 /* =========================================
    Components
@@ -106,11 +144,51 @@
 /* ========== To top button with scroll indicator bar ========== */
 
 /* ========== Buttons ========== */
+.mishan-main-btn{
+   width: fit-content;
+   padding: 14px 30px;
+   border-radius: 35px;
+   cursor: pointer;
+   transition: .3s;
+}
 
 /* =========================================
    Header
 ========================================= */
+.mishan-header{
+   z-index: var(--z-fixed);
+   position: fixed;
+   width: 100%;
+   top: 0;
+   left: 0;
+   padding: 30px 0;
+   transition: .3s ease;
+}
 
+.mishan-header .inner {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.mishan-logo a{
+   color: var(--color-01);
+   font-size: 2.6rem;
+   font-weight: var(--font-semi-bold);
+   transition: .3s;
+}
+
+.mishan-logo a:hover{
+   color: var(--hover-color);
+}
+
+.header-btns{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   column-gap: 25px;
+}
 /* ========== Dark/Light theme buttons ========== */
 
 /* =========================================
