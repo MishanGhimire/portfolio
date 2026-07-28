@@ -1,61 +1,57 @@
-# Mishan Ghimire - Personal Portfolio Website
+# Mishan Ghimire - Personal Portfolio
 
-A modern, fully responsive personal portfolio website built from scratch using HTML, CSS, and JavaScript. This project showcases my skills, experience, and projects in a sleek and interactive way.
+A modern, responsive personal portfolio built with React and Vite. It showcases my skills, projects, education, and provides a way to get in touch.
 
-## 🚀 Features
+## Live Demo
+https://github.com/MishanGhimire/portfolio
 
-- **Dark & Light Mode**: Seamlessly toggle between dark and light themes.
-- **Fully Responsive**: Optimized for all devices (desktops, tablets, and mobile phones).
-- **Modern UI/UX**: Clean, minimalist design with smooth hover transitions and animations.
-- **Dynamic Navigation**: A fixed bottom navigation bar for quick access to different sections.
-- **Sections**:
-  - Home (Hero Section)
-  - About Me
-  - Resume / Experience
-  - Services
-  - Portfolio / Projects
-  - Contact
+## Features
+* Fully responsive design for mobile, tablet, and desktop
+* Built-in dark/light theme toggle
+* Custom smooth animations using Framer Motion
+* Interactive skills and projects showcase
+* Downloadable Resume/CV integration
 
-## 🛠️ Technologies Used
+## Tech Stack
+* Frontend: React 19
+* Build Tool: Vite
+* Styling: Vanilla CSS (Custom Variables, Glassmorphism, CSS Grid/Flexbox)
+* Animations: Framer Motion
+* Icons: react-icons, lucide-react
 
-- **HTML5**: Semantic and accessible markup.
-- **CSS3**: Custom CSS variables, Flexbox layout, and smooth transitions.
-- **JavaScript (Vanilla)**: Interactive logic and theme toggling.
-- **Remix Icon**: Crisp, modern icons used throughout the design.
+## Getting Started
 
-## 📂 Project Structure
+### Prerequisites
+Make sure you have Node.js installed on your computer.
 
-```text
-portfolio/
-├── assets/
-│   ├── css/
-│   │   └── style.css       # Main stylesheet (includes dark/light theme logic)
-│   ├── images/             # Avatar and project screenshots
-│   └── js/
-│       └── main.js         # Interactive logic and DOM manipulation
-├── index.html              # Main HTML document
-└── README.md
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MishanGhimire/portfolio.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd portfolio
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+### Running Locally
+To start the development server, run:
+```bash
+npm run dev
+```
+Open http://localhost:5173 to view it in your browser.
+
+### Building for Production
+To build the app for production to the `dist` folder, run:
+```bash
+npm run build
 ```
 
-## 💻 Getting Started
-
-To view or modify this project locally, simply follow these steps:
-
-1. **Clone the repository:**
-   ```bash
-   https://github.com/MishanGhimire/portfolio.git
-   ```
-2. **Open the project:**
-   Navigate into the project directory and open the `index.html` file in your favorite web browser. 
-   *(Alternatively, you can use the Live Server extension in VS Code for hot reloading).*
-
-## 📬 Contact
-
-Created by **Mishan Ghimire** - A Student & Web Developer.
-Feel free to reach out if you'd like to collaborate or just say hi!
-
-- [LinkedIn](#) <!-- Add your link here -->
-- [GitHub](#) <!-- Add your link here -->
-
----
-*If you find this project helpful or interesting, please consider giving it a ⭐ on GitHub!*
+## Contact
+* Email: mishanghimire2003@gmail.com
+* LinkedIn: https://www.linkedin.com/in/mishan-ghimire/
+* GitHub: https://github.com/MishanGhimire
